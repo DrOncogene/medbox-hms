@@ -7,14 +7,18 @@ export default {
   theme: {
     extend: {
       colors: {
-        'pri': '#256EFF'
+        'pri': '#256EFF',
+        'sec': '#FE8344',
+        'pri-dark': '#0F2F67',
       },
       backgroundColor: {
         'pri': '#256EFF',
         'pri-light': '#508CFE',
-        'pri-trans': 'rgba(37, 110, 255, 0.9)',
+        'pri-trans': 'rgba(37, 110, 255, 0.5)',
         'sec': '#FE8344',
-        'tert': '#EFF3F4'
+        'tert': '#EFF3F4',
+        'milk': '#EFF3F4',
+        'dark-blue': 'rgba(0, 14, 41, 0.9)'
       },
       borderColor: {
         'pri': '#256EFF',

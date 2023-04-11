@@ -3,5 +3,129 @@
 @tailwind utilities;
 
 body {
-    font-family: 'Poppins' sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+::-webkit-scrollbar,
+::-webkit-scrollbar-track {
+    @apply bg-milk w-2;
+}
+
+::-webkit-scrollbar-thumb {
+    @apply rounded-md bg-pri;
+}
+
+.btn {
+    width: 103px;
+    @apply rounded-md px-5 py-1 font-medium text-sm whitespace-nowrap hover:bg-pri-trans;
+}
+
+.btn-pri {
+    @apply bg-pri-light;
+}
+
+.btn-sec {
+    @apply bg-sec;
+}
+
+.btn-bordered {
+    padding: 3px 19px;
+    @apply border hover:py-1 hover:px-5 hover:border-0;
+}
+
+.prev-btn {
+    @apply absolute left-5 top-1/2 -translate-y-1/2;
+}
+
+.next-btn {
+    @apply absolute right-5 top-1/2 -translate-y-1/2;
+}
+
+.section-title {
+    @apply text-lg font-bold mb-8;
+}
+
+#hero {
+    height: 500px;
+}
+
+#hero::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 500px;
+    z-index: -1;
+    /* backdrop-filter: blur(2px); */
+    @apply bg-pri-trans;
+}
+
+.hero-slide {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: -2;
+    transition: all 2s cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+
+.hero-1 {
+    background-image: url('/img/hero-1.webp');
+}
+
+.hero-2 {
+    background-image: url('/img/hero-2.webp');
+}
+
+.hero-3 {
+    background-image: url('/img/hero-3.webp');
+}
+
+.indicator {
+    transition: all 0.6s cubic-bezier(0.215, 0.610, 0.355, 1);
+    @apply py-[3px] px-2 rounded-md bg-white block;
+}
+
+.active {
+    @apply bg-sec px-4;
+}
+
+.card {
+    flex: 0 0 250px;
+    margin-right: 25px;
+    @apply flex flex-col justify-center rounded-md shadow-md shadow-pri-dark relative hover:shadow-none transition-all duration-500;
+}
+
+.card-no-shadow {
+    @apply shadow-none;
+}
+
+.card-top {
+    width: 250px;
+    @apply rounded-t-md;
+}
+
+.card-bottom {
+    height: 132px;
+    @apply max-w-[250px] text-center text-pri-dark p-5 rounded-b-md;
+}
+
+.card-title {
+    @apply font-bold text-sm mb-2;
+}
+
+.card-text {
+    @apply text-xs;
+}
+
+.card-icons {
+    height: 25px;
+    @apply absolute bottom-4 left-0  flex space-x-5 w-full justify-center items-center;
+}
+
+.brand-icon {
+    width: 20px;
 }

@@ -3,16 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MEDBOX | The HMIS</title>
+    <title>MEDBOX &bull; The HMIS</title>
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <link rel="stylesheet" href="./src/styles/main.css">
   </head>
-  <body class="font-default">
-    <nav class="main-navigation bg-pri text-white flex justify-between items-center px-20 py-4">
+  <body class="font-default text-white overflow-x-hidden selection:bg-sec selection:text-white">
+    <nav class="main-navigation bg-pri text-white flex justify-between items-center px-20 py-4 fixed top-0 left-0 w-full z-50">
       <div class="medbox-logo">
-        <a href="#"><img src="./img/nav-logo.svg" alt="" width="150px"></a>
+        <a href="#"><img src="./img/nav-logo.svg" alt="" width="150px" height="37px"></a>
       </div>
       <ul class="nav-links hidden lg:flex justify-center items-center space-x-10">
         <li class="font-medium border-sec hover:border-b"><a href="#hero">Home</a></li>
@@ -22,8 +23,250 @@
         <li class="rounded-2xl bg-pri-light hover:bg-sec py-2 px-4 font-medium"><a href="#">Book a consultation</a></li>
       </ul>
     </nav>
-    <section id="hero" class="relative">
-
+    <section id="hero" class="relative mt-[72px]">
+      <div class="hero-1 hero-slide"></div>
+      <div class="hero-2 hero-slide"></div>
+      <div class="hero-3 hero-slide"></div>
+      <div class="hero-text text-center flex flex-col space-y-8 items-center w-full h-full p-10">
+        <p class="hero-title text-5xl font-bold leading-[1.2] max-w-[680px]">The Hospital Management Software Solution you have been waiting for</p>
+        <div class="hero-subtitle text-md">
+          <p>Built for all hospital levels and sizes</p>
+          <p class="text-base">&bull; Primary &ThinSpace;&bull; Secondary &ThinSpace;&bull; Tertiary</p>
+        </div>
+        <div class="hero-buttons flex space-x-3 justify-center items-center">
+          <a href="#" class="btn btn-sec">Start here</a>
+          <a href="#" class="btn btn-bordered">Sign up</a>
+        </div>
+      </div>
+      <div class="w-full absolute bottom-4 flex justify-center items-center space-x-3 mt-4">
+        <span class="active indicator"></span>
+        <span class="indicator"></span>
+        <span class="indicator"></span>
+      </div>
     </section>
+    <section id="features" class="text-pri text-center p-10">
+      <p class="section-title">Enjoy out best featuress</p>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+        <div class="flex space-x-2 w-[400px] mx-auto mr-0">
+          <i class="block">
+            <svg width="90" height="90" viewBox="0 0 104 106" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M103 53.1437C103 81.6581 80.1556 104.754 52 104.754C23.8444 104.754 1 81.6581 1 53.1437C1 24.6293 23.8444 1.53372 52 1.53372C80.1556 1.53372 103 24.6293 103 53.1437Z" stroke="#256EFF" stroke-width="2"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M64.2415 26.2356C64.7159 26.614 65.0582 27.166 65.2187 27.8113C65.3792 28.4567 65.3494 29.1617 65.1337 29.8239L60.0662 45.3821L70.6895 48.9239C71.1754 49.0856 71.6011 49.4003 71.9205 49.8339C72.2398 50.2674 72.4405 50.8031 72.5007 51.3827C72.5609 51.9623 72.4782 52.5635 72.2618 53.121C72.0453 53.6785 71.7033 54.1709 71.273 54.5445L42.5473 79.4629C42.0469 79.8981 41.451 80.1517 40.8463 80.1868C40.2417 80.2219 39.6598 80.0366 39.1854 79.658C38.711 79.2793 38.3687 78.727 38.2085 78.0814C38.0483 77.4358 38.0784 76.7306 38.2945 76.0684L43.3619 60.5102L32.7387 56.9684C32.2528 56.8067 31.827 56.492 31.5076 56.0584C31.1883 55.6249 30.9876 55.0892 30.9274 54.5096C30.8673 53.93 30.9499 53.3288 31.1664 52.7713C31.3828 52.2138 31.7248 51.7214 32.1551 51.3478L60.8808 26.4294C61.3814 25.9953 61.9771 25.7428 62.5812 25.7085C63.1854 25.6742 63.7666 25.8599 64.2404 26.2387L64.2415 26.2356Z" fill="#256EFF"/>
+            </svg>              
+          </i>
+          <div class="flex flex-col space-y-1 text-left">
+            <p class="text-lg font-semibold">Fast</p>
+            <p class="text-sm text-black font-light">
+              Built with speed in mind, yet with impeccable performance. 
+              Get task completed without friction with seamless workflow
+            </p>
+          </div>
+        </div>
+        <div class="flex items-center space-x-2 w-[400px] mx-auto ml-0">
+          <i class="block">
+            <svg width="90" height="90" viewBox="0 0 104 106" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M103 53.1202C103 81.6347 80.1556 104.73 52 104.73C23.8444 104.73 1 81.6347 1 53.1202C1 24.6058 23.8444 1.51025 52 1.51025C80.1556 1.51025 103 24.6058 103 53.1202Z" stroke="#256EFF" stroke-width="2"/>
+              <path d="M50.5 23.8749C50.5 22.2398 51.0828 20.6716 52.1201 19.5154C53.1574 18.3592 54.5643 17.7097 56.0312 17.7097C57.4982 17.7097 58.9051 18.3592 59.9424 19.5154C60.9797 20.6716 61.5625 22.2398 61.5625 23.8749V25.93C61.5625 27.0201 61.951 28.0655 62.6425 28.8363C63.3341 29.6071 64.272 30.0401 65.25 30.0401H76.3125C77.2905 30.0401 78.2284 30.4732 78.92 31.244C79.6115 32.0148 80 33.0602 80 34.1503V46.4808C80 47.5708 79.6115 48.6163 78.92 49.3871C78.2284 50.1579 77.2905 50.5909 76.3125 50.5909H74.4688C73.0018 50.5909 71.5949 51.2405 70.5576 52.3967C69.5203 53.5529 68.9375 55.121 68.9375 56.7561C68.9375 58.3913 69.5203 59.9594 70.5576 61.1156C71.5949 62.2718 73.0018 62.9214 74.4688 62.9214H76.3125C77.2905 62.9214 78.2284 63.3544 78.92 64.1252C79.6115 64.896 80 65.9415 80 67.0315V79.362C80 80.4521 79.6115 81.4975 78.92 82.2683C78.2284 83.0391 77.2905 83.4722 76.3125 83.4722H65.25C64.272 83.4722 63.3341 83.0391 62.6425 82.2683C61.951 81.4975 61.5625 80.4521 61.5625 79.362V77.3069C61.5625 75.6718 60.9797 74.1036 59.9424 72.9474C58.9051 71.7912 57.4982 71.1417 56.0312 71.1417C54.5643 71.1417 53.1574 71.7912 52.1201 72.9474C51.0828 74.1036 50.5 75.6718 50.5 77.3069V79.362C50.5 80.4521 50.1115 81.4975 49.42 82.2683C48.7284 83.0391 47.7905 83.4722 46.8125 83.4722H35.75C34.772 83.4722 33.8341 83.0391 33.1425 82.2683C32.451 81.4975 32.0625 80.4521 32.0625 79.362V67.0315C32.0625 65.9415 31.674 64.896 30.9825 64.1252C30.2909 63.3544 29.353 62.9214 28.375 62.9214H26.5312C25.0643 62.9214 23.6574 62.2718 22.6201 61.1156C21.5828 59.9594 21 58.3913 21 56.7561C21 55.121 21.5828 53.5529 22.6201 52.3967C23.6574 51.2405 25.0643 50.5909 26.5312 50.5909H28.375C29.353 50.5909 30.2909 50.1579 30.9825 49.3871C31.674 48.6163 32.0625 47.5708 32.0625 46.4808V34.1503C32.0625 33.0602 32.451 32.0148 33.1425 31.244C33.8341 30.4732 34.772 30.0401 35.75 30.0401H46.8125C47.7905 30.0401 48.7284 29.6071 49.42 28.8363C50.1115 28.0655 50.5 27.0201 50.5 25.93V23.8749Z" fill="#256EFF"/>
+            </svg>
+          </i>
+          <div class="flex flex-col space-y-1 text-left">
+            <p class="text-lg font-semibold">Modular</p>
+            <p class="text-sm text-black font-light">
+              Cohesive system with Independent parts that can be deployed separately. 
+              We provide <i class="font-medium">only</i> what you need
+            </p>
+          </div>
+        </div>
+        <div class="flex items-center space-x-2 w-[400px] mx-auto mr-0">
+          <i class="block">
+            <svg width="90" height="90" viewBox="0 0 104 106" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M103 52.6539C103 81.1683 80.1556 104.264 52 104.264C23.8444 104.264 1 81.1683 1 52.6539C1 24.1395 23.8444 1.04395 52 1.04395C80.1556 1.04395 103 24.1395 103 52.6539Z" stroke="#256EFF" stroke-width="2"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M22.6225 31.0911C33.4793 30.9399 43.918 26.3788 52 18.2551C60.0814 26.3804 70.5203 30.9429 81.3775 31.0953C81.79 33.8264 82 36.6415 82 39.5028C82 61.4564 69.475 80.1327 52 87.0528C34.525 80.1285 22 61.4522 22 39.4986C22 36.6331 22.2137 33.8264 22.6225 31.0911ZM65.9012 46.6708C66.5843 45.8784 66.9623 44.817 66.9538 43.7154C66.9452 42.6137 66.5508 41.5599 65.8556 40.7809C65.1603 40.0019 64.2197 39.56 63.2365 39.5504C62.2533 39.5408 61.306 39.9643 60.5988 40.7297L48.25 54.5657L43.4012 49.133C42.694 48.3676 41.7467 47.9441 40.7635 47.9537C39.7803 47.9633 38.8397 48.4051 38.1444 49.1842C37.4492 49.9632 37.0548 51.017 37.0462 52.1187C37.0377 53.2203 37.4157 54.2817 38.0988 55.0741L45.5988 63.4774C46.302 64.2651 47.2556 64.7076 48.25 64.7076C49.2444 64.7076 50.198 64.2651 50.9012 63.4774L65.9012 46.6708Z" fill="#256EFF"/>
+            </svg>                                         
+          </i>
+          <div class="flex flex-col space-y-1 text-left">
+            <p class="text-lg font-semibold">Secure</p>
+            <p class="text-sm text-black font-light">
+              Your clients data are protected by top of the line security solutions
+            </p>
+          </div>
+        </div>
+        <div class="flex items-center space-x-2 w-[400px] mx-auto ml-0">
+          <i class="block">
+            <svg width="90" height="90" viewBox="0 0 104 106" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M103 52.7478C103 81.2622 80.1556 104.358 52 104.358C23.8444 104.358 1 81.2622 1 52.7478C1 24.2334 23.8444 1.13782 52 1.13782C80.1556 1.13782 103 24.2334 103 52.7478Z" stroke="#256EFF" stroke-width="2"/>
+              <rect x="45.6597" y="40.8471" width="12.3409" height="37.0898" fill="#256EFF"/>
+              <path d="M69.9787 45.9884L75.628 54.7831C75.628 54.7831 66.5305 58.1069 63.0823 64.3497C59.6341 70.5926 59.8156 80.1404 59.8156 80.1404L49.6524 80.1404C49.6524 80.1404 51.1043 66.0022 55.4599 58.1068C59.8156 50.2115 69.9787 45.9884 69.9787 45.9884Z" fill="#256EFF"/>
+              <path d="M34.7931 45.9884L29.1437 54.7831C29.1437 54.7831 38.2413 58.1069 41.6895 64.3497C45.1377 70.5926 44.9562 80.1404 44.9562 80.1404L55.1193 80.1404C55.1193 80.1404 53.6674 66.0022 49.3118 58.1068C44.9562 50.2115 34.7931 45.9884 34.7931 45.9884Z" fill="#256EFF"/>
+              <path d="M51.8302 21.3842L63.4608 41.7652H40.1996L51.8302 21.3842Z" fill="#256EFF"/>
+              <path d="M88.6067 39.119L77.7736 59.9451L65.3634 40.0403L88.6067 39.119Z" fill="#256EFF"/>
+              <path d="M16.165 39.119L26.9981 59.9451L39.4083 40.0403L16.165 39.119Z" fill="#256EFF"/>
+            </svg>                           
+          </i>
+          <div class="flex flex-col space-y-1 text-left">
+            <p class="text-lg font-semibold">Flexible</p>
+            <p class="text-sm text-pri-dark font-light">
+              We have offerings tailored to your needs. For example, you can choose to deploy locally or in the cloud
+              <i class="font-medium italic"> Your facility, your choice</i>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="services" class="bg-pri py-10 flex flex-col items-center relative overflow-hidden">
+      <p class="section-title">Our Services</p>
+      <div class="cards flex justify-center items-center mb-8 w-full">
+        <div class="card bg-white ml-8">
+          <img src="/img/service-hardware.webp" class="card-top">
+          <div class="card-bottom">
+            <p class="card-title">Hardware Infrastructure</p>
+            <p class="card-text">We help set up all necessary on-premise and cloud infrastructure to get MEDBox running in your facility</p>
+          </div>
+        </div>
+        <div class="card bg-white">
+          <img src="/img/service-data.webp" class="card-top">
+          <div class="card-bottom">
+            <p class="card-title">Data Analysis</p>
+            <p class="card-text">We help collect and analyse your data to provide recommendations for service improvements</p>
+          </div>
+        </div>
+        <div class="card bg-white">
+          <img src="/img/service-support.webp" class="card-top">
+          <div class="card-bottom">
+            <p class="card-title">IT Support</p>
+            <p class="card-text">On-site and off-site IT support including training of staffs at affordable rates</p>
+          </div>
+        </div>
+      </div>
+      <div class="service-btns space-x-5">
+        <a href="#" class="btn btn-sec">Get Started</a>
+        <a href="#" class="btn btn-bordered">Learn More</a>
+      </div>
+      <!-- <a href="#" class="prev-btn"><img src="/img/angle-left.svg" alt="" width="30px"></a>
+      <a href="#" class="next-btn"><img src="/img/angle-right.svg" alt="" width="30px"></a> -->
+    </section>
+    <section id="why-us" class="p-10 bg-milk text-center">
+      <p class="section-title text-sec">Why Choose Us?</p>
+      <div class="flex space-x-5 justify-center w-full">
+        <div class="text-pri max-w-[300px]">
+          <p class="font-black text-4xl">50+</p>
+          <p class="font-light text-xs">Trusted by over 50 world class Hospitals in the space of 6 months</p>
+        </div>
+        <div class="text-pri max-w-[300px]">
+          <p class="font-black text-4xl">5</p>
+          <p class="font-light text-xs">Nominated 5 times for most affordable and impactful HMIS in the country, winning twice</p>
+        </div>
+        <div class="text-pri max-w-[300px]">
+          <p class="font-black text-4xl">1</p>
+          <p class="font-light text-xs">Best in class value for money. We provide impeccable services at affordable cost</p>
+        </div>
+      </div>
+    </section>
+    <section id="the-team" class="p-10 text-center">
+      <p class="section-title text-pri-dark">Meet Our Awesome Team</p>
+      <div class="team-members flex space-x-5 justify-center">
+        <div class="card bg-milk">
+          <img src="/img/nas.webp" alt="" class="card-top">
+          <div class="card-bottom">
+            <p class="card-title">Dr. Nasir Abdulrasheed</p>
+            <p class="card-text">Team Lead</p>
+            <div class="card-icons">
+              <a href="https://github.com/DrOncogene" target="_blank">
+                <svg class="brand-icon fill-pri">
+                  <use href="/img/brand-sprite.svg#github" />
+                </svg>
+              </a>
+              <a href="#">
+                <svg class="brand-icon fill-pri">
+                  <use href="/img/brand-sprite.svg#linkedin" />
+                </svg>
+              </a>
+              <a href="https://twitter.com/DrOncogene" target="_blank">
+                <svg class="brand-icon fill-pri">
+                  <use href="/img/brand-sprite.svg#twitter" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="our-mission" class="p-10 text-center bg-milk">
+      <p class="section-title text-pri-dark">Our Mission</p>
+      <p class="text-pri-dark font-semibold w-[500px] mx-auto">
+        <i class="font-black text-4xl">&quot;</i> To interconnect all hospitals in Nigeria and provide an easy and reliable information interchange within and between them.
+      </p>
+    </section>
+    <footer class="flex flex-col justify-center bg-dark-blue text-center">
+      <div class="footer-top p-10">
+        <div id="contact-us" class="mb-5">
+          <p class="text-sm font-semibold mb-4">Contact Us</p>
+          <div class="flex justify-center items-center space-x-4 h-[25px]">
+            <a href="#">
+              <svg class="brand-icon fill-white">
+                <use href="/img/brand-sprite.svg#twitter" />
+              </svg>
+            </a>
+            <a href="#">
+              <svg class="brand-icon fill-white">
+                <use href="/img/brand-sprite.svg#linkedin" />
+              </svg>
+            </a>
+            <a href="#">
+              <svg class="brand-icon fill-white">
+                <use href="/img/brand-sprite.svg#github" />
+              </svg>
+            </a>
+            <a href="#">
+              <svg class="brand-icon fill-white">
+                <use href="/img/brand-sprite.svg#youtube" />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 gap-10 justify-items-center md:flex md:space-x-14 justify-center text-sm text-left">
+          <div class="min-w-[120px]">
+            <p class="font-semibold mb-4">About Us</p>
+            <ul class="flex flex-col space-y-2 text-xs font-thin">
+              <li class=""><a href="#">Mission</a></li>
+              <li class=""><a href="#">Pricing</a></li>
+              <li class=""><a href="#">Board Members</a></li>
+              <li class=""><a href="#"></a>Pioneers</li>
+            </ul>
+          </div>
+          <div class="min-w-[120px]">
+            <p class="font-semibold mb-4">Services</p>
+            <ul class="flex flex-col space-y-2 text-xs font-thin">
+              <li class=""><a href="#">HMS</a></li>
+              <li class=""><a href="#">IT Training</a></li>
+              <li class=""><a href="#">Data Analysis</a></li>
+              <li class=""><a href="#"></a>Infrastructure Setup</li>
+            </ul>
+          </div>
+          <div class="min-w-[120px]">
+            <p class="font-semibold mb-4">Modularity</p>
+            <ul class="flex flex-col space-y-2 text-xs font-thin">
+              <li class=""><a href="#">CMS</a></li>
+              <li class=""><a href="#">PMS</a></li>
+              <li class=""><a href="#">E-Prescriptions</a></li>
+              <li class=""><a href="#"></a>IPMS</li>
+              <li class="whitespace-nowrap"><a href="#"></a>Remote Consultations</li>
+            </ul>
+          </div>
+          <div class="min-w-[120px]">
+            <p class="font-semibold mb-4">Contacts</p>
+            <ul class="flex flex-col space-y-2 text-xs font-thin">
+              <li class=""><a href="#">Linkedin</a></li>
+              <li class=""><a href="#">Github</a></li>
+              <li class=""><a href="#">Twitter</a></li>
+              <li class=""><a href="#"></a>YouTube</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <p class="copyright text-xs font-thin py-5 px-10 border-t border-t-white">Copyright &copy; 2023 Oncogene Studios Inc.</p>
+    </footer>
+
+    <script type="module" src="./src/js/main.js"></script>
   </body>
 </html>
